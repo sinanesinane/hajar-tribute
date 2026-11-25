@@ -1,1 +1,198 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#171316">
+<title>A Moment Worth Remembering | Hajar</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&display=swap');
+
+:root {
+  --bg: #171316;
+  --gold: #d5b477;
+  --cream: #f4ead9;
+  --muted: #b7a99b;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at 50% 5%, #493329 0%, transparent 48%),
+    var(--bg);
+  color: var(--cream);
+  font-family: 'DM Sans', sans-serif;
+}
+
+main {
+  width: min(100% - 32px, 760px);
+  margin: auto;
+  padding: 65px 0 45px;
+  text-align: center;
+}
+
+.eyebrow {
+  color: var(--gold);
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.ornament {
+  color: var(--gold);
+  font-size: 25px;
+  margin: 22px 0;
+}
+
+h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(52px, 12vw, 88px);
+  font-weight: 500;
+  margin: 0;
+  line-height: 1;
+}
+
+.subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 23px;
+  color: var(--gold);
+  margin: 17px 0 9px;
+}
+
+.event {
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 2px;
+  margin: 0 0 35px;
+}
+
+.video-frame {
+  padding: 7px;
+  border: 1px solid #806541;
+  border-radius: 13px;
+  background: #211b1c;
+  box-shadow: 0 15px 60px #0008;
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  max-height: 650px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #080707;
+}
+
+.video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.caption {
+  margin: 38px auto 0;
+  color: var(--gold);
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.quote {
+  max-width: 620px;
+  margin: 16px auto;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(30px, 7vw, 43px);
+  font-style: italic;
+  line-height: 1.2;
+}
+
+.quote strong {
+  color: var(--gold);
+  font-weight: 500;
+}
+
+.closing {
+  margin: 30px auto 0;
+  max-width: 480px;
+  color: var(--muted);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 21px;
+  line-height: 1.6;
+}
+
+.footer {
+  margin-top: 55px;
+  color: #82766e;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 480px) {
+  main { padding-top: 45px; }
+  .event { line-height: 1.8; }
+}
+</style>
+</head>
+
+<body>
+<main>
+
+  <div class="eyebrow">A little tribute to</div>
+
+  <div class="ornament">✦</div>
+
+  <h1>Hajar</h1>
+
+  <div class="subtitle">A Moment Worth Remembering</div>
+
+  <p class="event">
+    MARRAKECH · 21 NOVEMBER 2026
+  </p>
+
+  <div class="video-frame">
+    <div class="video">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/aaZdYQD86Yg?playsinline=1&rel=0"
+        title="A Moment Worth Remembering - Hajar"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <div class="caption">And here's what I have to say...</div>
+
+  <div class="quote">
+    Who needs high heels when you can
+    <strong>stand tall</strong>
+    on your achievements?
+  </div>
+
+  <div class="ornament">✧</div>
+
+  <div class="closing">
+    Some moments deserve to be remembered.<br>
+    Some achievements deserve to be celebrated.<br><br>
+    And some people deserve to know just how proud
+    we are of them.
+  </div>
+
+  <div class="footer">
+    MADE WITH LOVE · FOR HAJAR
+  </div>
+
+</main>
+</body>
+</html>
+
