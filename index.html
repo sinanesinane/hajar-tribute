@@ -5,7 +5,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#171316">
-
 <title>PREVIA | Hajar</title>
 
 <style>
@@ -63,7 +62,7 @@ h1 {
 .subtitle {
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
-  font-size: clamp(40px, 9vw, 64px);
+  font-size: clamp(34px, 7vw, 50px);
   color: var(--gold);
   margin: 17px 0 8px;
   letter-spacing: 3px;
@@ -71,11 +70,12 @@ h1 {
 
 .award-title {
   color: var(--cream);
-  font-size: 12px;
-  letter-spacing: 3px;
-  line-height: 1.9;
+  font-size: clamp(9px, 2vw, 12px);
+  letter-spacing: 2px;
+  line-height: 1.8;
   margin: 12px 0 25px;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .event {
@@ -158,6 +158,11 @@ h1 {
   .event {
     line-height: 1.8;
   }
+
+  .award-title {
+    letter-spacing: 1px;
+    font-size: 9px;
+  }
 }
 </style>
 </head>
@@ -174,8 +179,7 @@ h1 {
   <div class="subtitle">PREVIA</div>
 
   <div class="award-title">
-    L'IA À LA LOGISTIQUE<br>
-    MEILLEURE STARTUP
+    L'IA À LA LOGISTIQUE — MEILLEURE STARTUP
   </div>
 
   <p class="event">
@@ -218,3 +222,4 @@ h1 {
 </main>
 </body>
 </html>
+
