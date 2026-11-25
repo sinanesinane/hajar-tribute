@@ -5,7 +5,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#171316">
-<title>A Moment Worth Remembering | Hajar</title>
+
+<title>PREVIA | Hajar</title>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&display=swap');
@@ -17,7 +18,9 @@
   --muted: #b7a99b;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -60,9 +63,19 @@ h1 {
 .subtitle {
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
-  font-size: 23px;
+  font-size: clamp(40px, 9vw, 64px);
   color: var(--gold);
-  margin: 17px 0 9px;
+  margin: 17px 0 8px;
+  letter-spacing: 3px;
+}
+
+.award-title {
+  color: var(--cream);
+  font-size: 12px;
+  letter-spacing: 3px;
+  line-height: 1.9;
+  margin: 12px 0 25px;
+  text-transform: uppercase;
 }
 
 .event {
@@ -138,8 +151,13 @@ h1 {
 }
 
 @media (max-width: 480px) {
-  main { padding-top: 45px; }
-  .event { line-height: 1.8; }
+  main {
+    padding-top: 45px;
+  }
+
+  .event {
+    line-height: 1.8;
+  }
 }
 </style>
 </head>
@@ -153,7 +171,12 @@ h1 {
 
   <h1>Hajar</h1>
 
-  <div class="subtitle">A Moment Worth Remembering</div>
+  <div class="subtitle">PREVIA</div>
+
+  <div class="award-title">
+    L'IA À LA LOGISTIQUE<br>
+    MEILLEURE STARTUP
+  </div>
 
   <p class="event">
     MARRAKECH · 21 NOVEMBER 2026
@@ -163,7 +186,7 @@ h1 {
     <div class="video">
       <iframe
         src="https://www.youtube-nocookie.com/embed/aaZdYQD86Yg?playsinline=1&rel=0"
-        title="A Moment Worth Remembering - Hajar"
+        title="PREVIA - Hajar"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen>
@@ -195,4 +218,3 @@ h1 {
 </main>
 </body>
 </html>
-
